@@ -1,78 +1,46 @@
+# React Portfolio
 
-# Circle Theme
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## A Powerful theme for powerful Thinkers for free 💸.
-### React + Tailwind = ❤️
+## Objective
 
-![Screenshot 2021-10-20 at 3 26 18 PM](https://user-images.githubusercontent.com/16558205/138075716-81961cf1-fad6-4012-9e24-2e7ee24ee227.png)
-
-
-To view a live example, **[click here](https://circletheme.netlify.app/)**.
-
-Feel free to use it as-is or customize it as much as you want.
-
-But if you want to **contribute** and make this much better for other developer have a look at [Issues](https://github.com/chetanverma16/circle-theme/issues).
-
-If you created something awesome and want to contribute then feel free to open an [pull request](https://github.com/chetanverma16/circle-theme/pulls).
-
-## Features
-- Responsive
-- Modern Design
-- Clean Animations
-- Easy to use
-- tailwindcss
+Create a portfolio using react so that when a prospective client or employer views your portfolio they can see your past work and learn about you.
 
 
-## Pages
-✔️ Index
-✔️ About
-✔️ Blog
-✔️ Pricing
-✔️ Career
-✔️ Contact
+![Budget Tracker Image](public/icons/tracker.png)
 
-## How To Use 
+  ## Table of Contents 
+- [Objective](#objective)
+- [License](#license)
+- [Description](#description)
+- [Deployment](#deployment)
+- [Questions](#questions)
 
-From your command line, clone and run react-portfolio-template:
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-```bash
-# Clone this repository
-$ git clone https://github.com/chetanverma16/circle-theme.git
+## Description
 
-# Go into the repository
-$ cd circle-theme
-
-# Install dependencies
-$ yarn
-
-#Start's development server
-$ gatsby develop
-```
+Portfolio built in react.
 
 ## Deployment
-When you are done with the setup, you should host your website online.
-We highly recommend to read through the [Deploying on Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) docs for React.
 
-#### Deploying to Netlify
+[Application is Deployed on Netlify](https://omarace-portfolio.netlify.app/)
 
-You could also host directly with Netlify by linking your own repository.
+### Built With
 
-[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chetanverma16/circle-theme)
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [Node.js](https://nodejs.org/en/)
+* [React](https://reactjs.org/)
+* [Gatsby](https://www.gatsbyjs.com/)
+* [Netlify](netlify)
 
-For more information, read [hosting on Netlify](https://create-react-app.dev/docs/deployment/#netlify).
+## Questions:
 
+Have any questions?
 
-## Technologies Used
-
-- [React](https://reactjs.org/)
-- [Gatsby](https://www.gatsbyjs.com/)
-
-
-
-## For the Future
-If you have awesome ideas on your mind,
-please don't hesitate to open a [pull request](https://github.com/chetanverma16/circle-theme/pulls).
-
-## Thanks
-If you like this portfolio template don't forget give it a ⭐ and also share it with me [here](mailto:hello@chetanverma.com).
-
+Feel free to contact me at:
+- Github: [OmarAce](https://github.com/OmarAce)
+- Email: omarace95@gmail.com
