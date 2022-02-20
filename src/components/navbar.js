@@ -16,7 +16,7 @@ const Navbar = () => {
                 <Link className="text-white opacity-50 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-poppins" to="/">
                   Home
                 </Link>
-                <Link className="text-white opacity-50 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-poppins" to="/portfolio">
+                <Link className="text-white opacity-50 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-poppins" to="/about">
                   Portfolio
                 </Link>
                 <Link className="text-white opacity-50 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-poppins" to="/contact">
