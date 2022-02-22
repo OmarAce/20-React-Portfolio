@@ -17,10 +17,19 @@ const Footer = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/portfolio">Portfolio</Link>
+              <Link to="/about">Portfolio</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>
+            </li>
+            <li>
+            <a href="https://twitter.com/OAceCoding">Twitter</a>
+            </li>
+            <li>
+            <a href="https://github.com/OmarAce">Github</a>
+            </li>
+            <li>
+            <a href="https://www.linkedin.com/in/omaracevedo95/">LinkedIn</a>
             </li>
           </ul>
         </div>
