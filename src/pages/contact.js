@@ -5,6 +5,7 @@ import Button from "../components/Atoms/button"
 import Fade from "react-reveal/Fade"
 
 const Contact = () => {
+
   return (
     <Layout>
       <Fade bottom cascade>
@@ -17,22 +18,23 @@ const Contact = () => {
             <p className="text-lg mt-2 opacity-50 w-3/4 xxs:text-xs xxs:w-full sm:text-sm sm:w-3/4">
               Contact me for business opportunites, questions or comments
             </p>
-            <form className="mt-5" method="POST" data-netlify="true">
+            <form className="mt-5" id="contactForm" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
               <div className="flex xxs:flex-col sm:flex-row">
+              <input type="hidden" name="form-name" value="contact" />
                 <div className="sm:mr-5 xxs:mr-0">
-                  <Input placeholder="Your Name" id="name" name="name"></Input>
+                  <Input placeholder="Your Name" id="name" name="name" type="text"></Input>
                 </div>
                 <div className="sm:ml-5 xxs:ml-0 xxs:mt-2 sm:mt-0">
-                  <Input placeholder="Your Email" id="email" name="email"></Input>
+                  <Input placeholder="Your Email" id="email" name="email" type="text"></Input>
                 </div>
               </div>
 
               <div className="flex mt-5 xxs:flex-col sm:flex-row">
                 <div className="sm:mr-5 xxs:mr-0">
-                  <Input placeholder="Your Company" id="company" name="company"></Input>
+                  <Input placeholder="Your Company" id="company" name="company" type="text"></Input>
                 </div>
                 <div className="sm:ml-5 xxs:ml-0 xxs:mt-2 sm:mt-0">
-                  <Input placeholder="Your Phone" id="phone" name="phone"></Input>
+                  <Input placeholder="Your Phone" id="phone" name="phone" type="text"></Input>
                 </div>
               </div>
               <textarea
@@ -41,6 +43,7 @@ const Contact = () => {
                 placeholder="How can we help you?"
                 id="message"
                 name="message"
+                type="text"
               ></textarea>
               <Button
                 title="Submit"
