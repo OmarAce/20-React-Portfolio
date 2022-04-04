@@ -5,9 +5,9 @@ const AboutGrid = () => {
   return (
     <div className="max-w-7xl mx-auto mt-20 grid grid-cols-3 gap-16 justify-items-center xxs:grid-cols-1 sm:grid-cols-3">
       <AboutTeamCard
-        web="https://github.com/Kam-Mivehchi/TypeScripts"
-        imgSrc="https://raw.githubusercontent.com/Kam-Mivehchi/TypeScripts/main/public/assets/app-demo.png?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
-        position="Type{Scripts}"
+        web="https://github.com/OmarAce/TypeScripts2-FrontEnd"
+        imgSrc="https://raw.githubusercontent.com/OmarAce/TypeScripts2-FrontEnd/main/assets/homepage.png"
+        position="TypeScripts"
       ></AboutTeamCard>
       <AboutTeamCard
         web="https://github.com/runaariga/project-1"
