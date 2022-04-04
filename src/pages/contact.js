@@ -20,7 +20,7 @@ const Contact = () => {
             </p>
             <form className="mt-5" id="contactForm" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
               <div className="flex xxs:flex-col sm:flex-row">
-              <input type="hidden" name="form-name" value="contact" />
+              <Input type="hidden" name="form-name" value="contact" />
                 <div className="sm:mr-5 xxs:mr-0">
                   <Input placeholder="Your Name" id="name" name="name" type="text"></Input>
                 </div>
