@@ -1,10 +1,38 @@
 import React from "react"
+import { navigate } from 'gatsby-link'
 import Layout from "../components/layout"
 import Input from "../components/Atoms/input"
 import Button from "../components/Atoms/button"
 import Fade from "react-reveal/Fade"
 
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
+}
+
 const Contact = () => {
+
+  const [state, setState] = React.useState({})
+
+  const handleChange = (e) => {
+    setState({ ...state, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const form = e.target
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute('action')))
+      .catch((error) => alert(error))
+  }
 
   return (
     <Layout>
@@ -18,23 +46,33 @@ const Contact = () => {
             <p className="text-lg mt-2 opacity-50 w-3/4 xxs:text-xs xxs:w-full sm:text-sm sm:w-3/4">
               Contact me for business opportunites, questions or comments
             </p>
-            <form className="mt-5" name="contact" method="post">
+            <form className="mt-5"         
+              name="contact"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}>
               <div className="flex xxs:flex-col sm:flex-row">
               <Input type="hidden" name="form-name" value="contact" />
+              <p hidden>
+                <label>
+                  Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+                </label>
+              </p>
                 <div className="sm:mr-5 xxs:mr-0">
-                  <Input placeholder="Your Name" id="name" name="name" type="text"></Input>
+                  <Input placeholder="Your Name" id="name" name="name" type="text" onChange={handleChange}></Input>
                 </div>
                 <div className="sm:ml-5 xxs:ml-0 xxs:mt-2 sm:mt-0">
-                  <Input placeholder="Your Email" id="email" name="email" type="text"></Input>
+                  <Input placeholder="Your Email" id="email" name="email" type="email" onChange={handleChange}></Input>
                 </div>
               </div>
 
               <div className="flex mt-5 xxs:flex-col sm:flex-row">
                 <div className="sm:mr-5 xxs:mr-0">
-                  <Input placeholder="Your Company" id="company" name="company" type="text"></Input>
+                  <Input placeholder="Your Company" id="company" name="company" type="text" onChange={handleChange}></Input>
                 </div>
                 <div className="sm:ml-5 xxs:ml-0 xxs:mt-2 sm:mt-0">
-                  <Input placeholder="Your Phone" id="phone" name="phone" type="text"></Input>
+                  <Input placeholder="Your Phone" id="phone" name="phone" type="text" onChange={handleChange}></Input>
                 </div>
               </div>
               <textarea
@@ -44,6 +82,7 @@ const Contact = () => {
                 id="message"
                 name="message"
                 type="text"
+                onChange={handleChange}
               ></textarea>
               <Button
                 title="Submit"
