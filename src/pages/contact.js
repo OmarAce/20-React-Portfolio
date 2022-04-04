@@ -18,7 +18,7 @@ const Contact = () => {
             <p className="text-lg mt-2 opacity-50 w-3/4 xxs:text-xs xxs:w-full sm:text-sm sm:w-3/4">
               Contact me for business opportunites, questions or comments
             </p>
-            <form className="mt-5" id="contactForm" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form className="mt-5" name="contact" method="post">
               <div className="flex xxs:flex-col sm:flex-row">
               <Input type="hidden" name="form-name" value="contact" />
                 <div className="sm:mr-5 xxs:mr-0">
