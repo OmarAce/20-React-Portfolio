@@ -6,7 +6,7 @@ const AboutTeamBigCard = () => {
       <div className="bg-lightblack w-full h-full flex flex-row justify-between rounded-xl xxs:flex-col sm:flex-row">
         <img
           className="w-3/4 object-cover h-96 rounded-l-lg xxs:w-full sm:w-3/4"
-          src="https://omarace.github.io/Portfolio/assets/me-sq.png?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
+          src="https://i.imgur.com/MNgtkg9.jpg"
         ></img>
         <div className="flex flex-col justify-between">
           <div className="text-white text-right m-6 font-poppins xxs:text-center sm:text-right">
