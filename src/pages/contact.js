@@ -49,6 +49,7 @@ const Contact = () => {
             <form className="mt-5"         
               name="contact"
               method="post"
+              action="/"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}>
