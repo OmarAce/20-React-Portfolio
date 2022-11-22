@@ -1,8 +1,8 @@
 import React from "react"
-import Fade from "react-reveal/Fade"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faDisplay } from "@fortawesome/free-solid-svg-icons"
+import Fade from "react-reveal/Fade"
 import * as S from "./ProjectCard.styled"
 
 interface ProjectItemProps {
@@ -12,14 +12,14 @@ interface ProjectItemProps {
   repo: string
 }
 
-const ProjectCard: React.FC<ProjectItemProps> = ({
+export const ProjectCard: React.FC<ProjectItemProps> = ({
   title,
   img,
   live,
   repo,
 }) => {
   return (
-    <Fade bottom cascade>
+    <Fade bottom>
       <S.CardContainer img={img}>
         <S.Title>{title}</S.Title>
         <S.LinkRow>
@@ -38,5 +38,3 @@ const ProjectCard: React.FC<ProjectItemProps> = ({
     </Fade>
   )
 }
-
-export default ProjectCard
