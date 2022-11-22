@@ -13,7 +13,6 @@ export const CardContainer = styled.div<CardProps>`
   align-items: center;
   justify-content: end;
   border-radius: 0.75rem;
-  background-color: red;
   background-image: ${({ img }) => `url(${img})`};
   background-size: cover;
   background-position: center;
