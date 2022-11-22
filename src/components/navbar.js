@@ -13,13 +13,22 @@ const Navbar = () => {
             </a>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link className="text-white opacity-50 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-poppins" to="/">
+                <Link
+                  className="text-white opacity-50 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-poppins"
+                  to="/"
+                >
                   Home
                 </Link>
-                <Link className="text-white opacity-50 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-poppins" to="/about">
+                <Link
+                  className="text-white opacity-50 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-poppins"
+                  to="/portfolio"
+                >
                   Portfolio
                 </Link>
-                <Link className="text-white opacity-50 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-poppins" to="/contact">
+                <Link
+                  className="text-white opacity-50 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-poppins"
+                  to="/contact"
+                >
                   Contact
                 </Link>
               </div>
@@ -47,13 +56,22 @@ const Navbar = () => {
       {openMenu && (
         <div className="md:hidden">
           <div className="md-px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a className="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/">
+            <a
+              className="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              href="/"
+            >
               Home
             </a>
-            <a className="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/about">
+            <a
+              className="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              href="/portfolio"
+            >
               Portfolio
             </a>
-            <a className="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/contact">
+            <a
+              className="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              href="/contact"
+            >
               Contact
             </a>
           </div>

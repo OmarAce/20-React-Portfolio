@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Omar Acevedo Portfolio`,
+    description: `Full Stack Developer | Omar Acevedo`,
+    author: `Omar Acevedo`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,11 +25,15 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/monitor.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,
     "gatsby-plugin-postcss",
+    "gatsby-plugin-styled-components",
+    "babel-plugin-styled-components",
+    "react-spring-3d-carousel",
+    "react-spring",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
