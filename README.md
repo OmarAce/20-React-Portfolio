@@ -6,8 +6,7 @@
 
 Create a portfolio using react so that when a prospective client or employer views your portfolio they can see your past work and learn about you.
 
-
-![Budget Tracker Image](public/icons/tracker.png)
+![Portfolio](https://user-images.githubusercontent.com/90338441/203395462-69f1b251-1cb2-4ef2-981b-0fba93b90dc1.png)
 
   ## Table of Contents 
 - [Objective](#objective)
