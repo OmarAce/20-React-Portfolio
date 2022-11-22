@@ -11054,10 +11054,10 @@ react-side-effect@^2.1.0:
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.2.tgz#dc6345b9e8f9906dc2eeb68700b615e0b4fe752a"
   integrity sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==
 
-react-spring-3d-carousel@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/react-spring-3d-carousel/-/react-spring-3d-carousel-1.2.0.tgz#6f0dd7f09e664e4bd533a6d9eb86cc08ec5c7a35"
-  integrity sha512-KDALtLK6TsouLE7KMOrRyof3DDBsUegizNlhz3O7MlVIjSys8ZRsO34Mi0Z4tjMp4gGtS9R0SwIWOPoNK28N8Q==
+react-spring-3d-carousel@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-spring-3d-carousel/-/react-spring-3d-carousel-1.2.1.tgz#25d5d94e76a212b6e791c2543f61c7c87763e8e9"
+  integrity sha512-T3Z75ShB613b/y9+DEfWE7ny6w9NKRD5/3bZoU53lUfSc1/JhdfpZ2uDQ5UvdskISQqol1RfqFdoDWuDgMT1NA==
   dependencies:
     "@emotion/core" "^10.0.7"
     "@emotion/styled" "^10.0.7"
