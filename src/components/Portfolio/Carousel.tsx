@@ -1,9 +1,11 @@
 import React, { useState } from "react"
 import { PortfolioItems, PortfolioData } from "./PortfolioItems"
-import Carousel from "react-spring-3d-carousel"
 import { config } from "react-spring"
 import styled from "styled-components"
 import { ProjectDescription } from "./ProjectDescription"
+import loadable from "@loadable/component"
+
+const Carousel = loadable(() => import("react-spring-3d-carousel"))
 
 const CarouselContainer = styled.div`
   display: flex;
