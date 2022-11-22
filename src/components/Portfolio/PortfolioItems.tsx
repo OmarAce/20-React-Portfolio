@@ -1,4 +1,7 @@
-export const PortfolioItems = [
+import React from "react"
+import ProjectCard from "./ProjectCard/ProjectCard"
+
+export const PortfolioData = [
   {
     title: "TypeScripts",
     img:
@@ -42,3 +45,17 @@ export const PortfolioItems = [
     live: "https://budget-tracker-ace.herokuapp.com/",
   },
 ]
+
+export const PortfolioItems = PortfolioData.map((item, index) => {
+  return {
+    key: index,
+    content: (
+      <ProjectCard
+        title={item.title}
+        img={item.img}
+        live={item.live}
+        repo={item.repo}
+      />
+    ),
+  }
+})

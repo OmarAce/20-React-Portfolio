@@ -6,6 +6,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^3.3.1",
@@ -23,6 +24,8 @@
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
+    "react-spring": "^9.5.5",
+    "react-spring-3d-carousel": "^1.2.1",
     "styled-components": "^5.3.6",
     "typeface-poppins": "^1.1.13"
   },

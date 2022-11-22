@@ -1,36 +1,35 @@
-import React from "react"
-import ProjectCard from "./ProjectCard/ProjectCard"
+import React, { useState } from "react"
 import { PortfolioItems } from "./PortfolioItems"
+import Carousel from "react-spring-3d-carousel"
+import { config } from "react-spring"
 import styled from "styled-components"
 
-const ProjectsContainer = styled.div`
-  display: grid;
+const CarouselContainer = styled.div`
+  display: flex;
+  height: 500px;
   max-width: 1280px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 384px;
-  grid-gap: 10px;
   margin: 0 auto;
   margin-top: 40px;
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
 `
 
-const Carousel: React.FC = () => {
+const ProjectsCarousel: React.FC = () => {
+  const [slide, goToSlide] = useState(0)
+
+  const slides = PortfolioItems.map(item => {
+    return { ...item, onClick: () => goToSlide(item.key) }
+  })
+
   return (
-    <ProjectsContainer>
-      {PortfolioItems.map(item => {
-        return (
-          <ProjectCard
-            title={item.title}
-            img={item.img}
-            live={item.live}
-            repo={item.repo}
-          />
-        )
-      })}
-    </ProjectsContainer>
+    <CarouselContainer>
+      <Carousel
+        slides={slides}
+        goToSlide={slide}
+        offsetRadius={3}
+        showNavigation={false}
+        animationConfig={config.gentle}
+      />
+    </CarouselContainer>
   )
 }
 
-export default Carousel
+export default ProjectsCarousel
