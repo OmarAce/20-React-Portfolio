@@ -28,7 +28,7 @@ const ProjectsCarousel: React.FC = (): any => {
         <Carousel
           slides={slides}
           goToSlide={slide}
-          offsetRadius={3}
+          offsetRadius={2}
           showNavigation={false}
           animationConfig={config.gentle}
         />

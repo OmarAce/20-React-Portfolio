@@ -36,7 +36,7 @@ export const Title = styled.h3`
   opacity: 0.5;
 `
 export const PortfolioText = styled.p`
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;
   line-height: 1.75rem;
   padding: 6px;
   text-align: right;
@@ -46,15 +46,22 @@ export const PortfolioText = styled.p`
     text-align: center;
   }
 `
+interface ImageProps {
+  img: string
+}
 
-export const ImageContainer = styled.img`
+export const ImageContainer = styled.div<ImageProps>`
   position: absolute;
-  object-fit: cover;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   height: 100px;
   width: 100px;
-  outline: solid 2px white;
-  outline-offset: 2px;
+  border: solid 4px white;
+  background-image: ${({ img }) => `url(${img})`};
+  background-size: cover;
+  background-position: center;
+
   @media (max-width: 768px) {
     position: relative;
     margin: 0 auto;

@@ -7,8 +7,8 @@ interface CardProps {
 export const CardContainer = styled.div<CardProps>`
   display: flex;
   flex-direction: column;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   position: relative;
   align-items: center;
   justify-content: end;

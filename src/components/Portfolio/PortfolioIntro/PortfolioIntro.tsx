@@ -4,7 +4,7 @@ import * as S from "./PortfolioIntro.styled"
 export const PortfolioIntro: React.FC = () => {
   return (
     <S.PortfolioIntroContainer>
-      <S.ImageContainer src="https://i.imgur.com/MNgtkg9.jpg" />
+      <S.ImageContainer img="https://i.imgur.com/MNgtkg9.jpg" />
       <S.PortfolioTextContainer>
         <S.Name>Omar Acevdo</S.Name>
         <S.Title>Full Stack Developer</S.Title>
