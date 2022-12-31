@@ -27,7 +27,7 @@ export const PortfolioData = [
     repo: "https://github.com/runaariga/project3",
     live: "https://banger-alert-redux.herokuapp.com",
     description:
-      "BangerAlert is a Spotify Companion App that hosts a new wrapper and displays lyrics to sing along with. The application uses the Spotify API to provide a simple interface to enhance the listening experience.",
+      "BangerAlert is a Spotify Companion App that hosts a new wrapper and displays lyrics to sing along with. The application uses the Spotify API to provide a simple interface to enhance the listening experience. Be Advised: The Spotify SDK for private projects requires a valid spotify premium membership and that the user's email is added to the approved list of users within the applications spotify development dashboard. If you would like to demo the application please reach out to me with your email so I can add you to the list.",
   },
   {
     title: "Weather Dashboard",
